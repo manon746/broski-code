@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css?family=Titan One');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+    cursor: pointer;
+}
+
+.appLogo {
+    display: flex;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.outLinedText {
+    font-size: 20px !important;
+    font-family: Titan One !important;
+    -webkit-text-stroke-width: 1.0px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: transparent;
+}
+
+.tbg-yellow {
+    -webkit-text-fill-color: rgb(237, 181, 7)
+}
+
+.tbg-orange {
+    -webkit-text-fill-color: rgb(225, 120, 13)
+}
+
+.tbg-red {
+    -webkit-text-fill-color: rgb(216, 14, 44)
+}
+
+.tbg-pink {
+    -webkit-text-fill-color: rgb(180, 49, 109)
+}
+
+.tbg-purple {
+    -webkit-text-fill-color: rgb(109, 38, 122)
+}
+
+.tbg-blue {
+    -webkit-text-fill-color: rgb(29, 83, 146)
+}
+
+.tbg-green {
+    -webkit-text-fill-color: rgb(12, 144, 106)
+}
+
+.tbg-grass {
+    -webkit-text-fill-color: rgb(91, 150, 51)
+}
+
+.tbg-black {
+    -webkit-text-fill-color: black
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-width: 360px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    border: 1px solid lightgray;
+}
+
+.headerPanel {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(180deg, lightgray, rgb(75, 75, 75));
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header {
+    width: 100%;
+    font-size: 28px;
+    color: rgb(55, 55, 55);
+    text-align: left;
+}
+
+.headerLayout {
+    display: flex;
+    align-items: center;
+}
+
+.appCmds {
+    display: grid;
+    grid-template-columns: 30px 30px 30px 30px 30px;
+    align-items: center;
+}
+
+.connectionBar {
+    display: block;
+}
+
+.connectedUser {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.Username {
+    display: none;
+}
+
+@media (min-width:930px) {
+    .favicon {
+        height: 60px;
+        width: 60px;
+        margin: 5px;
+    }
+
+    .outLinedText {
+        font-size: 30px !important;
+        -webkit-text-stroke-width: 1.5px;
+    }
+
+    .appCmds {
+        display: grid;
+        grid-template-columns: 38px 38px 38px 39px 38px;
+        align-items: center;
+    }
+
+    .connectionBar {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        margin-left: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .avatar {
+        border-radius: 50px;
+        width: 60px;
+        height: 60px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .Username {
+        display: inline;
+        font-size: 24px;
+        font-weight: 900;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 235px;
+    }
+
+    .avatarSmaller {
+        margin: 4px;
+        border-radius: 50px;
+        border: black 2px solid;
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .cmd {
+        cursor: pointer;
+        font-size: 30px;
+        font-weight: bold;
+        color: blue;
+        text-align: center;
+    }
+}
+
+.searchBar {
+    background-color: gray;
+    display: grid;
+    padding: 5px;
+    grid-template-columns: 1fr 1fr 30px;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.usersList {
+    max-width: 250px;
+}
+
+.keywordsList {
+    max-width: 250px;
+}
+
+.scrollContainer {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    flex: 12;
+    border-top: 1px solid lightgray;
+    height: auto;
+}
+
+::-webkit-scrollbar {
+    width: 18px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.ImageUploader {
+    align-items: center;
+    width: 600px;
+    height: 344px;
+    /* 600 X 0,57333 ratio */
+    border: 1px solid lightgray;
+}
+
+.ui-dialog #avatar {
+    border: 0px solid white;
+    width: 255px !important;
+    height: 255px !important;
+    margin: auto;
+}
+
+.ui-dialog {
+    margin-top: 30px;
+}
+
+.ui-dialog #image {
+    width: auto !important;
+    height: 255px !important;
+    margin: auto;
+}
+
+.avatarControl {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+#avatar_ImageContainer {
+    border-radius: 500px !important;
+    background-size: cover !important;
+    flex: 0;
+}
+
+#imagesList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+}
+
+.favicon {
+    height: 35px;
+    width: 35px;
+    margin: 5px;
+}
+
+input2,
+textarea2 {
+    margin-bottom: 15px;
+}
+
+.note {
+    font-size: 12px;
+    color: blue;
+}
+
+.image {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 4px solid white;
+}
+
+.imageLayout {
+    flex: 1;
+    min-width: 320px;
+    max-width: 500px;
+    align-content: stretch;
+    scroll-snap-align: start;
+}
+
+.imageLayout .CreatorUsername {
+    display: inline !important;
+}
+
+.imageHeader {
+    display: grid;
+    grid-template-columns: auto 35px 35px;
+}
+
+.imageTitle {
+    margin-left: 5px;
+    font-size: 20px;
+    min-height: 32px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.imageDate {
+    margin-left: 5px;
+    font-size: 14px;
+    color: gray
+}
+
+.imageDetailDate {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 8px;
+}
+
+.imageDesciption {
+    text-align: justify;
+}
+
+.imageFullSize {
+    width: 100%;
+}
+
+.image:hover {
+    border: 4px solid dodgerblue;
+}
+
+.cmd {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+}
+
+.cmd:hover {
+    color: rgb(2, 166, 221);
+}
+
+.cmd:active {
+    color: lightblue;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 4px;
+    color: gray;
+}
+
+.biggerCheck {
+    scale: 1.5 1.5;
+    padding-right: 4px;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.avatar {
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.avatarSmaller {
+    margin: 4px;
+    border-radius: 50px;
+    border: black 2px solid;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sharedIndicator {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+    border: black 2px solid;
+    border-radius: 35px;
+    background-color: rgba(200, 200, 200, 0.702);
+    ;
+}
+
+div2,
+span2 {
+    border: 1px solid red;
+}

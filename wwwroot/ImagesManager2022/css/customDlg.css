@@ -1,0 +1,55 @@
+.ui-dialog {
+    top: 0;
+    left: 0;
+    padding: 0px;
+    border: 1px;
+
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    border: 0px;
+    border-radius: 0px;
+}
+
+.ui-dialog .ui-dialog-content {
+    border: 0;
+    padding: 15px;
+    padding-top: 5px;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    overflow: auto;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+    text-align: left;
+    border-width: 0 0 0 0;
+    background-image: none;
+    margin-top: 0px;
+    padding: 0px;
+    background-color: white;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+    float: right;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+    margin: 10px;
+    cursor: pointer;
+    padding: 5px !important;
+}
+
+.ui-dialog .ui-resizable-se {
+    width: 12px;
+    height: 12px;
+    right: -5px;
+    bottom: -5px;
+    background-position: 16px 16px;
+
+}
+
+.ui-draggable-handle {
+    -ms-touch-action: none;
+    touch-action: none;
+}
